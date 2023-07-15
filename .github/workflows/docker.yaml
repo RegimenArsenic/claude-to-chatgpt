@@ -25,7 +25,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ${{ secrets.DOCKERHUB_USERNAME }}/claude-to-chatgpt
+          images: ${{ secrets.DOCKER_USERNAME }}/claude-to-chatgpt
           tags: |
             type=raw,value=latest
             type=ref,event=tag
